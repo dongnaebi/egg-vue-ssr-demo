@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="baidu-site-verification" content="{{config.thirdParty.baiduSiteVerification}}" />
+    {{{ meta.inject().title.text() }}}
+    {{{ meta.inject().meta.text() }}}
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{config.logo.shortcut}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link rel="shortcut icon" href="{{config.logo.favicon}}">
+    <!--<link rel="manifest" href="/dist/public/manifest.json">-->
+    <style id="theme-style-tag">
+      {{{style}}}
+    </style>
+    <script>
+      window.config = {{{tenantString}}}
+      window.theme = {{{themeString}}}
+    </script>
+  </head>
+  <body class="{{config.theme}}">
+    <!--vue-ssr-outlet-->
+    <script>
+      /* eslint-disable no-use-before-define,semi */
+      // 异步百度统计
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement('script');
+        hm.src = '//hm.baidu.com/hm.js?{{config.thirdParty.pcStatisticsKey}}';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>

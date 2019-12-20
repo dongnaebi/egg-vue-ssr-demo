@@ -1,0 +1,228 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5 "BlinkMacSystemFont", "-apple-system", "Microsoft YaHei UI", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+  color: var(--color-body);
+  -ms-overflow-style: scrollbar;
+  word-break: break-all
+}
+
+button, input, select, textarea {
+  font-size: 100%
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  outline: 0;
+  transition: color .1s ease;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img, area, a {
+  border: 0;
+  outline: 0
+}
+
+address, caption, cite, code, dfn, em, th, var, i {
+  font-style: normal;
+  font-weight: normal
+}
+
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace
+}
+
+ol, ul {
+  list-style: none
+}
+
+body {
+  background: var(--color-body-bg);;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+small {
+  font-size: 12px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom
+}
+
+legend {
+  color: #000
+}
+
+a, input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, textarea, button, select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+
+div {
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  vertical-align: top;
+}
+
+.font-aequilate {
+  font-family: 'Helvetica Neue';
+}
+
+a:hover {color: var(--color-primary); }
+
+/****************flexbox**************/
+.flex {display:flex;}
+.inline-flex {display:inline-flex;}
+.flex-center{justify-content: center;align-items: center;}
+/*横向或纵向*/
+.flex-row {flex-direction:row;}
+.flex-col {flex-direction:column;}
+.flex-row-reverse {flex-direction:row-reverse;}
+.flex-col-reverse {flex-direction:column-reverse;}
+.flex-wrap {flex-wrap:wrap;}
+/*主轴对齐方式*/
+.flex-justify-start {justify-content:flex-start;}
+.flex-justify-end {justify-content:flex-end;}
+.flex-justify-center {justify-content:center;}
+.flex-justify-between {justify-content:space-between;}
+.flex-justify-around {justify-content:space-around;}
+/*侧轴对齐方式*/
+.flex-align-start {align-items:flex-start;}
+.flex-align-end {align-items:flex-end;}
+.flex-align-center {align-items:center;}
+.flex-align-baseline {align-items:baseline;}
+.flex-align-stretch {align-items:stretch;}
+/*主轴换行时行在侧轴的对齐方式，必须定义flex-wrap为换行*/
+.flex-content-start {align-content:flex-start;}
+.flex-content-end {align-content:flex-end;}
+.flex-content-center {align-content:center;}
+.flex-content-between {align-content:space-between;}
+.flex-content-around {align-content:space-around;}
+.flex-content-stretch {align-content:stretch;}
+/*允许子元素收缩*/
+.flex-child-grow {flex-grow: 1;}/*允许拉伸*/
+.flex-child-shrink {flex-shrink: 1;}/*允许收缩*/
+.flex-child-noshrink {flex-shrink: 0;}/*不允许收缩*/
+.flex-child-average {flex:1;}/*平均分布，兼容旧版必须给宽度*/
+.flex-child-first {order: 1;}/*排第一个*/
+/*子元素在侧轴的对齐方式*/
+.flex-child-align-start {align-self:flex-start;}
+.flex-child-align-end {align-self:flex-end;}
+.flex-child-align-center {align-self:center;}
+.flex-child-align-baseline {align-self:baseline;}
+.flex-child-align-stretch {align-self:stretch;}
+
+.wrapper { width: 1200px; margin: 0 auto; position: relative;}
+.w-960 .wrapper{max-width: 960px;}
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+.hide { display: none; }
+.left { float: left; }
+.right { float: right; }
+.full-height{height:100%;}
+.full-width{width:100%;}
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.clear { clear: both; }
+.overflow-hide { overflow: hidden; }
+.normal { font-weight: normal; }
+.bold { font-weight: bold; }
+.font-30 { font-size: 30px; }
+.font-24 { font-size: 24px; }
+.font-22 { font-size: 22px; }
+.font-20 { font-size: 20px; }
+.font-18 { font-size: 18px; }
+.font-17 { font-size: 17px; }
+.font-16 { font-size: 16px; }
+.font-15 { font-size: 15px; }
+.font-14 { font-size: 14px; }
+.font-13 { font-size: 13px; }
+.font-12 { font-size: 12px; }
+.font-10 { font-size: 10px; }
+.border-box{box-sizing: border-box;}
+.border{border:solid 1px var(--color-border);}
+.border-top { border-top: 1px solid var(--color-border); }
+.border-bottom { border-bottom: 1px solid var(--color-border); }
+.border-left { border-left: 1px solid var(--color-border); }
+.border-right { border-right: 1px solid var(--color-border); }
+.margin { margin: 10px; }
+.margin-top { margin-top: 10px; }
+.margin-right { margin-right: 10px; }
+.margin-bottom { margin-bottom: 10px; }
+.margin-left { margin-left: 10px; }
+.mt-5{margin-top:5px;}
+.mr-5{margin-right:5px;}
+.mb-5{margin-bottom:5px;}
+.ml-5{margin-left:5px;}
+.mt-20{margin-top:20px;}
+.mr-20{margin-right:20px;}
+.mb-20{margin-bottom:20px;}
+.ml-20{margin-left:20px;}
+.padding { padding: 10px; }
+.padding-top { padding-top: 10px; }
+.padding-right { padding-right: 10px; }
+.padding-bottom { padding-bottom: 10px; }
+.padding-left { padding-left: 10px; }
+.text-center { text-align: center; }
+.pointer{cursor: pointer;}
+.ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nowrap { word-wrap: normal; white-space: nowrap; }
+.row2 { word-break:break-all; display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden; }
+.row3 { word-break:break-all; display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden; }
+.lines-1{/* autoprefixer: off */text-overflow:ellipsis;-webkit-line-clamp:1;display: -webkit-box;overflow:hidden;-webkit-box-orient: vertical;word-break: break-all;}
+.lines-2{/* autoprefixer: off */text-overflow:ellipsis;-webkit-line-clamp:2;display:block;display: -webkit-box;overflow:hidden;-webkit-box-orient: vertical;word-break: break-all;height:3em;}
+.lh-15{line-height:1.5}
+.lh-12{line-height:1.2}
+.lh-1{line-height:1}
+.lh-20{line-height:2.0}
+
+/*颜色*/
+.primary-color, a.primary-color { color: var(--color-primary); } /*主色*/
+.primary-bgcolor { background-color: var(--color-primary);}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pointer {cursor: pointer;}
