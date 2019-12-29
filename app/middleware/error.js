@@ -3,7 +3,7 @@ module.exports = (options, app) => {
     try {
       await next()
     } catch (err) {
-      // ctx.response.error(err)
+      ctx.response.error(err)
     }
   }
 }

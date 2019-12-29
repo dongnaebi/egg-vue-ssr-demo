@@ -1,0 +1,108 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5 "BlinkMacSystemFont", "-apple-system", "Microsoft YaHei UI", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+  color: var(--color-body);
+  -ms-overflow-style: scrollbar;
+  word-break: break-all
+}
+
+button, input, select, textarea {
+  font-size: 100%
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  outline: 0;
+  transition: color .1s ease;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img, area, a {
+  border: 0;
+  outline: 0
+}
+
+address, caption, cite, code, dfn, em, th, var, i {
+  font-style: normal;
+  font-weight: normal
+}
+
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace
+}
+
+ol, ul {
+  list-style: none
+}
+
+body {
+  background: var(--color-body-bg);;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+small {
+  font-size: 12px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom
+}
+
+legend {
+  color: #000
+}
+
+a, input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, textarea, button, select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+
+div {
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  vertical-align: top;
+}
+
+.font-aequilate {
+  font-family: 'Helvetica Neue';
+}
+
+a:hover {color: var(--color-primary); }
+

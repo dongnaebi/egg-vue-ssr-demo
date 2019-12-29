@@ -4,25 +4,23 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="baidu-site-verification" content="{{config.thirdParty.baiduSiteVerification}}" />
     {{{ meta.inject().title.text() }}}
     {{{ meta.inject().meta.text() }}}
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{config.logo.shortcut}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{site.logo.shortcut}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <link rel="shortcut icon" href="{{config.logo.favicon}}">
-    <!--<link rel="manifest" href="/dist/public/manifest.json">-->
+    <link rel="shortcut icon" href="{{site.logo.favicon}}">
     <style id="theme-style-tag">
       {{{style}}}
     </style>
     <script>
-      window.config = {{{tenantString}}}
+      window.site = {{{siteString}}}
       window.theme = {{{themeString}}}
     </script>
   </head>
-  <body class="{{config.theme}}">
+  <body class="{{site.theme}}">
     <!--vue-ssr-outlet-->
     <script>
       /* eslint-disable no-use-before-define,semi */
@@ -30,7 +28,7 @@
       var _hmt = _hmt || [];
       (function () {
         var hm = document.createElement('script');
-        hm.src = '//hm.baidu.com/hm.js?{{config.thirdParty.pcStatisticsKey}}';
+        hm.src = '//hm.baidu.com/hm.js?{{site.thirdParty.statisticsKey}}';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(hm, s);
       })();

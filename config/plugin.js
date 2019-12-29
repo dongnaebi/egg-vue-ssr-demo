@@ -1,5 +1,5 @@
 'use strict'
-const path = require('path')
+// const path = require('path')
 
 /** @type Egg.EggPlugin */
 exports.nunjucks = {
@@ -12,7 +12,8 @@ exports.jwt = {
 }
 exports.vueSsrDevServer = {
   enable: true,
-  path: path.join(__dirname, '../plugin/egg-vue-ssr-dev-server')
+  package: 'egg-vue-ssr-dev-server'
+  // path: path.join(__dirname, '../../egg-vue-ssr-dev-server')
 }
 /* exports.sequelize = {
   enable: true,

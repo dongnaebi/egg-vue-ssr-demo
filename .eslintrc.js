@@ -1,15 +1,17 @@
 module.exports = {
     root: true,
-    parser: 'babel-eslint',
     parserOptions: {
+      parser: "babel-eslint",
       sourceType: 'module'
     },
     // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-    extends: 'standard',
+    extends: [
+      'standard',
+      "plugin:vue/essential"
+    ],
     // required to lint *.vue files
     plugins: [
-      'vue',
-      'html'
+      'vue'
     ],
     // add your custom rules here
     'rules': {

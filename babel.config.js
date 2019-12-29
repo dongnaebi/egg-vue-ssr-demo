@@ -30,7 +30,8 @@ module.exports = function (api) {
         'import',
         {
           'libraryName': 'ant-design-vue',
-          'libraryDirectory': 'es'
+          'libraryDirectory': 'es',
+          'style': 'css'
         },
         'ant-design-vue'
       ],
