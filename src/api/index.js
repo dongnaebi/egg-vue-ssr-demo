@@ -48,7 +48,7 @@ function fetch ({ token = '', UUID = '' }, url = '', params = {}, method = 'get'
           top.location.href = '/login'
           return
         }
-        if (method.toLowerCase() === 'cache' && response.data.code === 0) {
+        if (method.toLowerCase() === 'cache' && response.data.code === 200) {
           cache.set(url, response.data)
         }
         resolve([null, response.data])
