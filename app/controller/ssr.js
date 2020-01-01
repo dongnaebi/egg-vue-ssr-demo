@@ -83,7 +83,7 @@ class SsrController extends Controller {
       }
     }
     // status 200 will be cache by cdn, so we set 202 when api error
-    if (html.indexOf('errData:') > -1) {
+    if (html.indexOf('errData') > -1) {
       ctx.status = 202
     }
     ctx.body = html
